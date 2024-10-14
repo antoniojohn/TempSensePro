@@ -8,7 +8,7 @@
 
 // Define DHT sensor type and GPIO pin
 
-#define DHTTYPE DHT11  // Change to DHT22 if using DHT22
+#define DHTTYPE DHT11 
 
 #define DHTPIN D4          // GPIO pin connected to the DHT sensor
 
@@ -40,7 +40,6 @@ void setup() {
 
 void loop() {
 
-  // Wait a few seconds between measurements
 
   delay(2000);
 
@@ -48,7 +47,7 @@ void loop() {
 
   // Reading temperature or humidity takes about 250 milliseconds
 
-  // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
+ 
 
   float humidity = dht.readHumidity();
 
@@ -84,8 +83,5 @@ void loop() {
 
   Serial.println(" °C");
 
-  // Serial.print(temperatureF);
-
-  // Serial.println(" °F");
 
 }
